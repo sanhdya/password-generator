@@ -40,7 +40,7 @@ function App() {
           placeholder='Password' readOnly ref={passwordRef} />
           <button className='outline-none bg-blue-700 text-white px-3 py-1 shrink-0' onClick={copyPassword}>copy</button>
         </div>
-        <div className='flex text-sm gap-x-2'>
+        <div className='text-md gap-x-2'>
           <div className='flex items-center gap-x-1'>
             <input type='range' min={6} max={100} value={length} className='cursor-pointer' onChange={(e) =>{setLength(e.target.value)}}/>
             <label>Length :{length}</label>
